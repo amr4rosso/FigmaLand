@@ -1,0 +1,59 @@
+@include laptop {
+	.container {
+		max-width: 750px;
+	}
+
+	.pricing {
+
+		&__item {
+			width: 280px;
+
+			&-button {
+				width: 170px;
+			}
+		}
+	}
+
+}
+
+@include tablet {
+	.container {
+		max-width: 500px;
+	}
+
+	.pricing {
+
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			width: 290px;
+			margin-right: 0;
+
+			&:not(:last-of-type){
+				margin-bottom: 30px;
+			}
+
+			&-button {
+				width: 170px;
+			}
+		}
+	}
+
+}
+
+@include mobile {
+	.container {
+		max-width: 420px;
+	}
+
+
+}
+
+@include mobile-small {
+	.container {
+		max-width: 290px;
+	}
+
+}

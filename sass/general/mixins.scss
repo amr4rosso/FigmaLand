@@ -1,0 +1,28 @@
+@mixin flex {
+	display: flex;
+	align-items: center;
+}
+
+@mixin laptop() {
+	@media screen and (max-width: $breakpoint_xl) {
+		@content;
+	}
+}
+
+@mixin tablet() {
+	@media screen and (max-width: $breakpoint_md) {
+		@content;
+	}
+}
+
+@mixin mobile() {
+	@media screen and (max-width: $breakpoint_sm) {
+		@content;
+	}
+}
+
+@mixin mobile-small() {
+	@media screen and (max-width: $breakpoint_xs) {
+		@content;
+	}
+}

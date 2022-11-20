@@ -1,0 +1,141 @@
+.pricing {
+	background: #252B42;
+	color: $white;
+	padding: 100px 0;
+	text-align: center;
+
+	&__title {
+		@extend %title;
+		color: $white;
+		margin-bottom: 17px;
+	}
+
+	&__text {
+		@extend %text;
+		color: $white;
+		max-width: 552px;
+		display: inline-block;
+		margin-bottom: 90px;
+	}
+
+	&__list {
+		@extend %flex;
+		justify-content: center;
+	}
+
+	&__item {
+		flex: 1;
+		background: #FFFFFF;
+		border: 1px solid #DEDEDE;
+		box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+		border-radius: 10px;
+		color: #000;
+		padding: 40px;
+		margin-right: 50px;
+		max-width: 335px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&--mood {
+			background: #2091F9;
+			color: #ffffff;
+			padding: 83px 40px;
+
+			.pricing__item {
+
+				&-text {
+					color: inherit;
+				}
+
+				&-cost {
+
+					&-value {
+						color: inherit;
+					}
+
+					&-currency {
+						color: inherit;
+					}
+				}
+
+				&-list {
+					&-item {
+						color: inherit;
+					}
+				}
+
+				&-button {
+					background: #ffffff;
+					color: #2091F9;
+				}
+			}
+		}
+
+		&-title {
+			font-size: 20px;
+			font-family: 'Graphik bold';
+			text-transform: uppercase;
+			margin-bottom: 3px;
+		}
+
+		&-text {
+			font-size: 16px;
+			line-height: 23px;
+			letter-spacing: 0.1px;
+			color: #374754;
+			max-width: 148px;
+			display: inline-block;
+			margin-bottom: 30px;
+		}
+
+		&-cost {
+			@extend %flex;
+			justify-content: center;
+			margin-bottom: 30px;
+
+			&-value,
+			&-currency {
+				font-family: 'Graphik bold';
+				letter-spacing: 0.2px;
+				color: #252B42;
+			}
+
+			&-value {
+				font-size: 74px;
+			}
+
+			&-content {
+				text-align: left;
+				margin-left: 10px;
+
+				&-currency {
+					font-size: 20px;
+				}
+
+				&-duration {
+					font-size: 16px;
+					line-height: 23px;
+					letter-spacing: 0.1px;
+					color: #374754;
+				}
+			}
+		}
+
+		&-list {
+			margin-bottom: 30px;
+
+			&-item {
+				font-size: 15px;
+				line-height: 28px;
+				letter-spacing: 0.2px;
+				color: #252B42;
+			}
+		}
+
+		&-button {
+			@extend %button;
+		}
+	}
+}

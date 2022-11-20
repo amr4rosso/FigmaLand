@@ -1,0 +1,38 @@
+.features {
+	text-align: center;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 7px;
+	}
+
+	&__text {
+		@extend %text;
+		max-width: 532px;
+		display: inline-block;
+		margin-bottom: 80px;
+	}
+
+	&__list {
+		@extend %flex;
+		justify-content: space-evenly;
+		margin-bottom: 80px;
+
+		&-item {
+			max-width: 255px;
+
+			&-title {
+				@extend %subtitle;
+				margin: 10px 0;
+				
+			}
+
+			&-text {
+				font-size: 18px;
+				line-height: 25px;
+				letter-spacing: 0.2px;
+
+			}
+		}
+	}
+}

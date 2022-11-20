@@ -1,0 +1,56 @@
+.subscribe {
+
+	&__content {
+		@extend %flex;
+		justify-content: space-between;
+
+		&-mobile {
+			text-align: center;
+			display: none;
+
+			&-subtitle {
+				@extend %subtitle;
+			}
+
+			&-title {
+				@extend %title;
+			}
+
+			&-text {
+				@extend %text;
+			}
+		}
+
+		&-info {
+
+			&-pretitle {
+				@extend %subtitle;
+			}
+
+			&-title {
+				@extend %title;
+			}
+
+			&-form {
+				margin-top: 15px;
+
+				&-text {
+					font-size: 18px;
+					line-height: 25px;
+					margin-bottom: 36px;
+				}
+
+				&-input {
+					@extend %input;
+					width: 220px;
+					margin-right: 12px;
+				}
+
+				&-button {
+					@extend %button;
+					width: 172px;	
+				}
+			}
+		}
+	}
+}

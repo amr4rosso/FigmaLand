@@ -1,0 +1,53 @@
+.reviews {
+	margin: 100px 0;
+	text-align: center;
+
+	&__title {
+		@extend %title;
+		margin-bottom: 80px;
+	}
+
+	&__icon {
+		margin-bottom: 50px;
+	}
+
+	&__comment {
+		font-size: 28px;
+		line-height: 40px;
+		letter-spacing: 0.2px;
+		color: #374754;
+		max-width: 987px;
+		margin: 0 auto 60px auto;
+	}
+
+	&__user {
+		@extend %flex;
+		justify-content: center;
+		margin-bottom: 80px;
+
+		&-avatar {
+			margin-right: 15px;
+		}
+
+		&-info {
+			text-align-last: left;
+		}
+
+		&-doing,
+		&-position {
+			font-size: 16px;
+			line-height: 23px;
+			letter-spacing: 0.1px;
+			color: #374754;
+		}
+
+		&-position {
+			color: #252B42;
+		}
+	}
+
+	&__button {
+		@extend %button;
+		width: 276px;
+	}
+}

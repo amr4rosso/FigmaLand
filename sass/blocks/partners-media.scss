@@ -1,0 +1,44 @@
+@include laptop {
+	.container {
+		max-width: 750px;
+	}
+
+}
+
+@include tablet {
+	.container {
+		max-width: 500px;
+	}
+
+	.partners {
+
+		&__list {
+
+			&-item-img {
+				width: 100%;
+			}
+
+			&-item:nth-of-type(6), 
+			&-item:nth-of-type(7),
+			&-item:nth-of-type(8) {
+				display: none;
+			}
+		}
+	}
+
+}
+
+@include mobile {
+	.container {
+		max-width: 420px;
+	}
+
+
+}
+
+@include mobile-small {
+	.container {
+		max-width: 290px;
+	}
+
+}

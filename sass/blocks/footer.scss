@@ -1,0 +1,50 @@
+.footer {
+	padding: 150px 0;
+	background: #252B42;
+	color: $white;
+
+	&__content {
+		@extend %flex;
+		justify-content: space-between;
+
+		&-column {
+
+			&-title {
+				@extend %subtitle;
+				color: $white;
+				margin-bottom: 25px;
+			}
+
+
+			&-list {
+
+				&-item {
+
+					&-link {
+						font-size: 15px;
+						line-height: 28px;
+						letter-spacing: 0.2px;
+						color: #FFFFFF;
+					}
+				}
+			}
+
+			&-loft {
+
+				&-item {
+					@extend %flex;
+					margin-bottom: 10px;
+				}
+
+			}
+
+			&-social {
+				@extend %flex;
+
+				&-li:not(:last-of-type){
+					margin-right: 24px;
+				}
+			}
+		}
+	}
+}

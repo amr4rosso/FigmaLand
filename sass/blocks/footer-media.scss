@@ -1,0 +1,43 @@
+@include laptop {
+	.container {
+		max-width: 750px;
+	}
+
+}
+
+@include tablet {
+	.container {
+		max-width: 500px;
+	}
+
+	.footer {
+
+		&__content {
+			flex-direction: column;
+
+			&-column {
+				text-align: center;
+
+				&:not(:last-of-type){
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+
+}
+
+@include mobile {
+	.container {
+		max-width: 420px;
+	}
+
+
+}
+
+@include mobile-small {
+	.container {
+		max-width: 290px;
+	}
+
+}

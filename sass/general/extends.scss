@@ -1,0 +1,91 @@
+
+%title-banner {
+	font-family: 'Graphik bold';
+	font-size: 74px;
+	line-height: 84px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: $white;
+}
+
+%title {
+	font-size: 48px;
+	line-height: 55px;
+	letter-spacing: 0.2px;
+	color: $title-color;
+
+	@include mobile {
+		font-size: 38px;
+    	line-height: 44px;
+	}
+}
+
+%subtitle {
+	font-family: 'Graphik bold';
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0.1px;
+	color: $title-color;
+}
+
+%text {
+	font-size: 28px;
+	line-height: 40px;
+	letter-spacing: 0.2px;
+	color: $text-color;
+
+	@include mobile {
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+%button {
+	width: 255px;
+	height: 56px;
+	background: #2091F9;
+	border-radius: 35px;
+	font-size: 20px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+	transition: 0.8s all;
+}
+
+%input {
+	width: 353px;
+	height: 54px;
+
+	background: #F5F5F5;
+	border: 1px solid #E8E8E8;
+	border-radius: 39px;
+	padding-left: 20px;
+
+	&::placeholder {
+		font-size: 15px;
+		line-height: 16px;
+		letter-spacing: 0.1px;
+		color: #18171D;
+	}
+}
+
+%textarea {
+	width: 353px;
+	height: 193px;
+	background: #F5F5F5;
+	border: 1px solid #E8E8E8;
+	padding: 20px;
+	margin-bottom: 45px;       
+
+	&::placeholder {
+		font-size: 15px;
+		line-height: 16px;
+		letter-spacing: 0.1px;
+		color: #18171D;
+	}
+}
+
+%flex {
+	display: flex;
+	align-items: center;
+}

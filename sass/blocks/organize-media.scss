@@ -1,0 +1,50 @@
+@include laptop {
+	.container {
+		max-width: 750px;
+	}
+
+	.organize {
+		padding: 50px 0;
+
+		&__content {
+			flex-direction: column-reverse;
+
+			&-info {
+				text-align: center;
+				margin-top: 80px;
+			}
+		}
+	}
+
+}
+
+@include tablet {
+	.container {
+		max-width: 500px;
+	}
+
+	.organize {
+
+		&__content-image-img {
+			width: 100%;
+		}
+	}
+
+}
+
+@include mobile {
+	.container {
+		max-width: 420px;
+	}
+
+
+
+
+}
+
+@include mobile-small {
+	.container {
+		max-width: 290px;
+	}
+
+}

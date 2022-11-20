@@ -1,0 +1,167 @@
+@include laptop {
+	.container {
+		max-width: 750px;
+	}
+
+	.header {
+
+		&__head {
+			flex-direction: row-reverse;
+			
+			&-nav {
+				display: none;
+				text-align: center;
+
+				&-list {
+					flex-direction: column;
+				}
+
+				&-li:not(:last-of-type) {
+					margin-right: 0;
+					margin-bottom: 21px;
+				}
+
+				&-link {
+					font-size: 30px;
+					line-height: 48px;
+					letter-spacing: 2.2px;
+					color: #FFFFFF;
+				}
+			}
+
+			// burger menu
+
+			.checkbox, .check-wrapper {
+				display: block;
+			}
+
+			.menu {
+				position: relative;
+			}
+
+			.check {
+				transition: 400ms;
+			}
+
+			.checkbox {
+				position: absolute;
+				width: 30px;
+				height: 30px;
+				margin: 0;
+				top: 0;
+				right: 0;
+				opacity: 0;
+				z-index: 5;
+
+				&:checked ~ .check-wrapper > .check:first-of-type {
+					transform: rotate(45deg) translate(9px, 10px);
+				}
+
+				&:checked ~ .check-wrapper > .check:nth-of-type(2) {
+					opacity: 0;
+				}
+
+				&:checked ~ .check-wrapper > .check:last-of-type {
+					transform: rotate(-45deg) translate(1px, -4px);
+					width: 30px;
+				}
+
+				&:checked ~ .header__head-nav {
+					display: block;
+					width: 30%;
+					height: 100%;
+					position: fixed;
+					top: 0;
+					left: 0;
+					background: rgb(49, 49, 49);
+					text-align: center;
+					padding-top: 20px;
+					border: 1px solid rgb(71, 70, 70);
+					z-index: 3;
+				}
+			}
+
+			.check-wrapper {
+				position: relative;
+				z-index: 4;
+			}
+
+
+
+			&-social {
+				display: none;
+			}
+		}
+
+	}
+
+
+}
+
+@include tablet {
+	.container {
+		max-width: 500px;
+	}
+
+	.header {
+
+		&__banner-title {
+			font-family: 'Graphik';
+			margin-bottom: 30px;
+		}
+
+		&__banner-text {
+			font-size: 24px;
+		}
+	}
+
+
+}
+
+@include mobile {
+	.container {
+		max-width: 420px;
+	}
+
+	.header {
+
+		&__head-nav-link {
+			font-size: 18px;
+    		line-height: 26px;
+    		letter-spacing: 1.2px;
+		}
+
+		&__banner-title {
+			font-size: 52px;
+			line-height: 58px;
+		}
+
+		&__banner-text {
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+
+}
+
+@include mobile-small {
+	.container {
+		max-width: 290px;
+	}
+
+	.header {
+
+		&__banner-title {
+			font-size: 34px;
+			line-height: 42px;
+		}
+
+		&__banner-text {
+			font-size: 14px;
+    		line-height: 20px;
+		}
+	}
+
+
+}
